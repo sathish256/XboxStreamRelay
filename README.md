@@ -43,7 +43,7 @@ brew install mediamtx ffmpeg dnsmasq
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/XboxStreamRelay.git
+   git clone https://github.com/sathish256/XboxStreamRelay.git
    cd XboxStreamRelay
    ```
 
@@ -169,5 +169,5 @@ Pull requests welcome. Please ensure:
 
 ## License
 
-[MIT](LICENSE) — Copyright © [Year] [Your Name]
+[MIT](LICENSE) — Copyright © 2026 Sathish Krishnamurthy
 
