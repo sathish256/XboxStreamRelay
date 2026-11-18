@@ -1,0 +1,62 @@
+# Xcode
+*.xcuserstate
+*.xcuserdatad/
+xcuserdata/
+DerivedData/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+!default.pbxuser
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3
+
+# Xcode Previews
+PreviewReplacement*/
+
+# Build artifacts
+build/
+*.build/
+*.app/
+*.ipa
+*.dSYM/
+*.framework
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Packages/
+Package.resolved
+
+# macOS junk
+.DS_Store
+.Spotlight-V100
+.Trashes
+Icon?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Security — NEVER commit secrets
+*.yml          # mediamtx config files (all generated at runtime)
+*.yaml
+.env
+.env.*
+*.log
+secrets/
+stream_key*
+*.key
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# CocoaPods (not used, but just in case)
+Pods/
+Podfile.lock
+
+auto.crt
+auto.key
