@@ -25,6 +25,14 @@ struct XboxStreamRelayApp: App {
 // MARK: - App Delegate for clean process termination
 
 final class AppDelegate: NSObject, NSApplicationDelegate {
+    func applicationDidFinishLaunching(_ notification: Notification) {
+        // Explicitly set dock icon in case LaunchServices icon cache is stale
+        if let iconURL = Bundle.main.url(forResource: "AppIcon", withExtension: "icns"),
+           let iconImage = NSImage(contentsOf: iconURL) {
+            NSApplication.shared.applicationIconImage = iconImage
+        }
+    }
+    
     func applicationWillTerminate(_ notification: Notification) {
         // Ensure mediamtx process, temp file and sleep assertion
         // are all cleaned up before the app exits
